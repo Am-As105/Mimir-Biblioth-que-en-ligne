@@ -110,6 +110,17 @@
 			text-align: center;
 			align-items: center;
 		}
+		.week{
+			display: flex;
+			text-align: center;
+			align-items: center;
+		}
+		.week h5{
+			color: #D54242;
+		}
+		.week img{
+			width: 200px;
+		}
 		/* imgg {
   opacity: 0;
   animation: fadeIn 1s ease forwards;
@@ -127,7 +138,6 @@
     align-items: center;
     text-align: center; 
   }
-
   .navdiv ul {
     flex-direction: column;
   }
