@@ -206,10 +206,6 @@
 .formContact{
 	text-align: center;
 	justify-content: center;
-	color: #ffffff;
-	border: solid 1px;
-	background-color: rgb(34, 34, 34);
-	margin: 0;
 	padding-bottom: 250px;
 }
 .formContact a {
@@ -218,6 +214,7 @@
 	background-color: green;
 	padding: 10px;
 	color: white;
+	border: #6812EA;
 	
 	
 }
@@ -226,12 +223,22 @@
 	padding: 10px;
 	
 }
-
+.formSegg{
+	
+	text-align: center;
+}
+.formSegg input{
+			
+			width: 300px; 
+			padding: 10px;
+			border-radius: 10px;
+			border: solid #3915db 2px;
+			font-size: larger;
+		}
 footer{
 	display: flex;
 	text-align: center;
 	justify-content: center;
-
 	padding: 100px;
 	background-color: #beb0fa;
 }
@@ -312,7 +319,7 @@ footer img{
 @media (max-width:768px)
 {
 	.week{
-		width: 100%;
+		width: 86%;
 		flex-direction: column;
 	}
 	.about p{
