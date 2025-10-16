@@ -54,6 +54,7 @@
 		}
 		button{
 			background-color: black; margin-left: 10px; border-radius: 10px; padding: 10px; width: 90px;
+			
 		}
 		button a{
 			color: white; font-weight: bold; font-size: 15px;
@@ -63,7 +64,7 @@
             text-align: center;
         }
         .textcenter .circel{
-			background-color: #54BAB9;
+			background-color: #0e9593;
 			padding: 20px;
 			position: absolute; margin-left: 20%;
 		}
@@ -72,22 +73,21 @@
 			width: 300px; 
 			padding: 13px;
 			border-radius: 4px;
-			border: none;
 			border: solid #3915db 2px;
 			font-size: larger;
 			
 		}
 		section {
-  		display: grid;
- 		 grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		display: grid;
+ 		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   		gap: 1rem;
   		padding: 20px;
-		
 		}
-
 		section .img{
 			width:  100%;
-
+		}
+		.chihaja{
+			gap : 0;
 		}
 		.imglogo{
 			width: 26px;
@@ -110,17 +110,139 @@
 			text-align: center;
 			align-items: center;
 		}
-		.week{
-			display: flex;
-			text-align: center;
-			align-items: center;
+		.week {
+         display: flex;
+         align-items: center; 
+         justify-content: center;
+         gap: 30px;           
+         padding: 40px;	
+		 color: white;	
+		 /* border: solid ; */
+		 background-color: black;
 		}
 		.week h5{
 			color: #D54242;
+			display: grid;
+			
 		}
 		.week img{
-			width: 200px;
+			width: 300px;
+            max-width: 100%;
+           border-radius: 8px;
+		   box-shadow: #b2aad4   0px 0px 10px;
 		}
+		.text {
+        display: flex;
+         flex-direction: column;  
+         gap: 20px;               
+         padding: 30px;
+         align-items: center;      
+         text-align: center;       
+}
+
+
+
+
+
+.border {
+  display: flex;
+  flex-direction: column;       
+  align-items: center;          
+  justify-content: center;      
+  padding: 30px;
+  border: 2px solid #3D26A3;
+  
+  text-align: center;
+
+}
+.name input{
+	width: 250px;
+	padding: 15px;
+	border: solid 1px #6812EA;
+	
+	
+}
+ .name a{
+	color: #3D26A3;
+	display: inline-block;
+	background-color: green;
+	width: 250px;
+	color: #ffffff;
+	border: none;
+	padding: 15px;
+	
+}
+.about p{
+	width: 80%;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;	
+	font-size: 20px;
+	text-align: center;
+}
+
+.inputname{
+	/* color: #0e9593; */
+	gap: 2em;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+}
+.inputname input{
+	width: 200px;
+	padding: 10px;
+}
+.seg{
+	display: flex;
+	
+}
+#add{
+	background-color: blue;
+	color: white;
+	padding: 10px;
+	border-radius: 2px;
+}
+#add:hover{
+	background-color: #3D26A3;
+}
+.formContact{
+	text-align: center;
+	justify-content: center;
+	color: #ffffff;
+	border: solid 1px;
+	background-color: rgb(34, 34, 34);
+	margin: 0;
+	padding-bottom: 250px;
+}
+.formContact a {
+	display: inline-block;
+	width: 460px;
+	background-color: green;
+	padding: 10px;
+	color: white;
+	
+	
+}
+.email input{
+	width: 460px;
+	padding: 10px;
+	
+}
+
+footer{
+	display: flex;
+	text-align: center;
+	justify-content: center;
+
+	padding: 100px;
+	background-color: #beb0fa;
+}
+footer img{
+	width: 50px;
+
+}
+.about h3{
+	color: #238579;
+}
+
 		/* imgg {
   opacity: 0;
   animation: fadeIn 1s ease forwards;
@@ -179,4 +301,31 @@
     margin-top: 10px;
   }
 }
+@media (max-width:600px)
+{
+	.border input {
+		width: 100%;
+		box-sizing: border-box;
+	}
+}
 
+@media (max-width:768px)
+{
+	.week{
+		width: 100%;
+		flex-direction: column;
+	}
+	.about p{
+		width: 100%;
+	}
+	
+	.week img{
+		width: 70%;
+	}
+}
+@media(max-width:560px)
+{
+	.email input{
+		width: 100%;
+	}
+}
